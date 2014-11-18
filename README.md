@@ -8,7 +8,9 @@ To use this:
 1. Make a new bookmark in your browser
   - For the "Name" you might put "MetaBookmarkletCreator".
   - Copy the code block below, paste this into the "Location" of a new bookmark.
-2. Navigate to the KB article (open in a new tab, without Service Now frames around it. You might cmd+click on the link of the KB article)
+2. Navigate to the KB article
+  - Open the KB article in a new tab, without Service Now frames around it. You might cmd+click on the link of the KB article
+  - If nothing happens, you may have Service Now's frames still open. Try to open the KB article in its own tab.
 3. Click on the bookmark you made in step 1
 4. Follow the instructions in the popup.
 
