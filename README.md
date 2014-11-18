@@ -9,7 +9,23 @@ To use this:
 4. Follow the instructions in the popup.
 
 ```
-javascript: (function() {      var L = 'https://yale.service-now.com/incident.do?sys_id=-1';      var LOCATIONSTRING = location.href;      var onANewTicketPage = (LOCATIONSTRING.indexOf('sys_id=-1') > -1);      if (onANewTicketPage) {          reflistPick('incident.u_kb_article', '1de812cc4ddcbd80a6c49b2b9ba4a296', 'KB0005128');      } else {          location = L;      }      })();
+javascript: (function () {
+    var kbid = document.getElementById("sys_id").value;
+    var kbnumstring = document.getElementsByClassName("kb_article_header_info")[0].innerHTML;
+    var kbpatt = /(KB\d{7})/gi;
+    var kbnum = kbpatt.exec(kbnumstring)[0];
+    var text = "javascript: (function() {
+      var L = 'https://yale.service-now.com/incident.do?sys_id=-1';
+      var LOCATIONSTRING = location.href;
+      var onANewTicketPage = (LOCATIONSTRING.indexOf('sys_id=-1') > -1);
+      if (onANewTicketPage) {
+          reflistPick('incident.u_kb_article', '" + kbid + "', '" + kbnum +"');
+      } else {
+          location = L;
+      }
+      })();";
+    window.prompt("Create a new bookmark, and paste this text into the 'URL' part of the bookmark.\n\nTo use this bookmarklet, you will have to press this bookmark button twice. 1) to navigate to a new incident page (if you're not there already) and 2) on the incident page, to apply the kb article.\n\nThis bookmark is for " + kbnum, text);
+})();
 ```
 
 ## Bookmarklet Examples
