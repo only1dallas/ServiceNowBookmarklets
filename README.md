@@ -2,7 +2,9 @@
 
 ## Meta Bookmarklet Generator
 Use this to create your own bookmarklets like the ones below!
+
 To use this:
+
 1. Copy this code, paste this into the "Location" of a new bookmark. You might name this "MetaBookmarkletCreator".
 2. Navigate to the KB article (open in a new tab, without Service Now frames around it. You might cmd+click on the link of the KB article)
 3. Click on the bookmark you made in step 1
@@ -32,6 +34,7 @@ javascript: (function () {
 Javascript bookmarklets to auto-apply templates/kb articles to Service Now Tickets
 
 To use this:
+
 1. Copy this code, paste this into the "Location" of a new bookmark. You might name this "+GenericIntake" if your KB article name is "Generic Intake".
 2. Click on the bookmark you made in step 1, follow the instructions in the popup.
 
