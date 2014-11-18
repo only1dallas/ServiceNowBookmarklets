@@ -5,10 +5,13 @@ Use this to create your own bookmarklets like the ones below!
 
 To use this:
 
-1. Copy this code, paste this into the "Location" of a new bookmark. You might name this "MetaBookmarkletCreator".
+1. Copy this code, paste this into the "Location" of a new bookmark. For the "Name" you might put "MetaBookmarkletCreator".
 2. Navigate to the KB article (open in a new tab, without Service Now frames around it. You might cmd+click on the link of the KB article)
 3. Click on the bookmark you made in step 1
 4. Follow the instructions in the popup.
+
+
+Paste this into "location" of the bookmarklet:
 
 ```
 javascript: (function () {
